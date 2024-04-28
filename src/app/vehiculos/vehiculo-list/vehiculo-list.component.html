@@ -1,3 +1,23 @@
 <p>
-  vehiculo-list works!
+  <img src="assets/logo.png">
 </p>
+<table class="styled-table">
+  <thead>
+      <tr>
+          <th>#</th>
+          <th>Marca</th>
+          <th>Linea</th>
+          <th>Modelo</th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let vehiculo of vehiculos">
+      <tr>
+          <td>{{ vehiculo.id }}</td>
+          <td>{{ vehiculo.marca}}</td>
+          <td>{{ vehiculo.linea }}</td>
+          <td>{{ vehiculo.modelo }}</td>
+      </tr>
+  </tbody>
+
+</table>
+
