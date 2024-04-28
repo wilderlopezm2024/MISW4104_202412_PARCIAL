@@ -1,6 +1,8 @@
 <p>
   <img src="assets/logo.png">
 </p>
+<div>
+
 <table class="styled-table">
   <thead>
       <tr>
@@ -20,13 +22,12 @@
   </tbody>
 
 </table>
+</div>
+
 <div *ngIf="vehiculos.length > 0">
-  <h3>Resumen de Totales por Marcas:</h3>
-  <ul>
-    <li *ngFor="let marca of obtenerListaMarcas()">
-      {{ marca[0] }}: {{ marca[1] }}
-    </li>
-  </ul>
+    <div *ngFor="let marca of obtenerListaMarcas()">
+     Total {{ marca[0] }}: {{ marca[1] }}
+    </div>
 </div>
 <hr>
 <p style="text-align: center;font-size: smaller">Contact us: +57 3102105253- info&#64;tusegundazo.com - &#64;tusegundazo</p>
